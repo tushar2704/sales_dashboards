@@ -12,19 +12,22 @@ ctrl-c
 ```
 
 ## Demo
-Market Sales Dashboard[Streamlit]: 
+Super Market Sales Dashboard[Streamlit]: (https://tushar2704-sales-dashboards-supermarket-uabani.streamlit.app/)
+
+Super Market Sales Dashboard[Render]: (https://supermarket-dash-k64n.onrender.com/)
 
 ## Screenshot
+![Dashboar Screenshot](https://user-images.githubusercontent.com/66141195/232072173-f5cc624b-4583-4ee3-89e8-fb21b6b30a8d.png)
 
-![Dashboar Screenshot](https://content.screencast.com/users/jubbel3/folders/Snagit/media/64b4d64a-4e59-4bec-9f16-771eb1a99005/08.18.2021-19.50.jpg)
+
 
 
 ## Author
 
-- Tushar Aggarwal
-- LinkedIn: https://www.linkedin.com/in/tusharaggarwalinseec/
-- Website: https://cognitoai.in/
-- Kaggle: https://www.kaggle.com/tusharaggarwal27
+- <b>Tushar Aggarwal</b>
+- <b>LinkedIn</b>: https://www.linkedin.com/in/tusharaggarwalinseec/
+- <b>Website</b>: https://cognitoai.in/
+- <b>Kaggle</b>: https://www.kaggle.com/tusharaggarwal27
 
 
 
