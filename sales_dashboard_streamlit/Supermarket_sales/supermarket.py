@@ -17,9 +17,7 @@ st.set_page_config(page_title="Supermarket Sales Dashboard",
 @st.cache_data
 def get_df():
 
-    df1 = pd.read_excel(io="sales_dashboard_streamlit\supermarket_sales\supermarkt_sales.xlsx",
-                   engine="openpyxl",
-                   sheet_name='Sales',
+    df1 = pd.read_excel("sales_dashboard_streamlit\supermarket_sales\supermarkt_sales.xlsx",
                    skiprows=3,
                    usecols="B:R",
                    nrows=1000)
@@ -120,14 +118,14 @@ left1.plotly_chart(fig_hourly_sales, use_container_width=True)
 right1.plotly_chart(fig_product_sales, use_container_width=True)
 
 # ---- HIDE STREAMLIT STYLE ----
-#hide_st_style = """
-            #<style>
-            #MainMenu {visibility: hidden;}
-            #footer {visibility: hidden;}
-            #header {visibility: hidden;}
-            #</style>
-            #"""
-#st.markdown(hide_st_style, unsafe_allow_html=True)
+hide_st_style = """
+            <style>
+            MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 
