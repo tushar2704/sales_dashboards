@@ -17,14 +17,14 @@ st.set_page_config(page_title="Supermarket Sales Dashboard",
 @st.cache_data
 def get_df():
 
-    df = pd.read_excel(io="sales_dashboard_streamlit\supermarket_sales\supermarkt_sales.xlsx",
+    df1 = pd.read_excel(io="sales_dashboard_streamlit\supermarket_sales\supermarkt_sales.xlsx",
                    engine="openpyxl",
                    sheet_name='Sales',
                    skiprows=3,
                    usecols="B:R",
                    nrows=1000)
-    df["hour"] = pd.to_datetime(df["Time"], format="%H:%M:%S").dt.hour
-    return df
+    df1["hour"] = pd.to_datetime(df["Time"], format="%H:%M:%S").dt.hour
+    return df1
 # Adding "hour" column
     
 
