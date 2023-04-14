@@ -17,7 +17,7 @@ st.set_page_config(page_title="Supermarket Sales Dashboard",
 @st.cache_data
 def get_df():
 
-    df1 = pd.read_excel(io="sales_dashboard_streamlit\supermarket_sales\supermarkt_sales.xlsx",
+    df1 = pd.read_excel(io="https://github.com/tushar2704/sales_dashboards/blob/main/sales_dashboard_streamlit/Supermarket_sales/supermarkt_sales.xlsx",
                    engine="openpyxl",
                    sheet_name='Sales',
                    skiprows=3,
