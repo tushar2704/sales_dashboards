@@ -25,12 +25,7 @@ def load_data(nrows):
 
     return data
 
-
-
-
-# Adding "hour" column
-    
-
+#Calling first 1000 rows
 df = load_data(1000)
 #-----Sidebar-----
 
