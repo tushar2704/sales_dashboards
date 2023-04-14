@@ -4,7 +4,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import openpyxl as op
-
+import gdown
+url = "https://drive.google.com/uc?id=1j-aEuUC4z4r5GwjZkHl2C4uBPKW7-i4s"
+output = "sales.csv" # replace with the name you want for your CSV file
+gdown.download(url, output, quiet=False)
 
 
 
@@ -14,19 +17,21 @@ st.set_page_config(page_title="Supermarket Sales Dashboard",
                    layout='wide')
 
 
-@st.cache_data
-def get_df():
 
-    df1 = pd.read_excel("sales_dashboard_streamlit\supermarket_sales\supermarkt_sales.xlsx",
-                   skiprows=3,
-                   usecols="B:R",
-                   nrows=1000)
-    df1["hour"] = pd.to_datetime(df1["Time"], format="%H:%M:%S").dt.hour
-    return df1
+@st.cache_data(persist=True)
+def load_data(nrows):
+    data = pd.read_csv(output, nrows=nrows)
+    data["hour"] = pd.to_datetime(data["Time"], format="%H:%M").dt.hour
+
+    return data
+
+
+
+
 # Adding "hour" column
     
 
-df = get_df()
+df = load_data(1000)
 #-----Sidebar-----
 
 st.sidebar.header("Please select :")

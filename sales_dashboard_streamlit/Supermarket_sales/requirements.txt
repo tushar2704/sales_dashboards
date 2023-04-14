@@ -3,3 +3,4 @@ pandas
 streamlit
 plotly
 openpyxl
+gdown
