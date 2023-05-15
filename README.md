@@ -19,18 +19,15 @@ Super Market Sales Dashboard[Render]: (https://supermarket-dash-k64n.onrender.co
 ## Screenshot
 ![Dashboar Screenshot](https://user-images.githubusercontent.com/66141195/232072173-f5cc624b-4583-4ee3-89e8-fb21b6b30a8d.png)
 
-
-
-
 ## Author
 
 - <b>Tushar Aggarwal</b>
 - <b>LinkedIn</b>: https://www.linkedin.com/in/tusharaggarwalinseec/
-- <b>Website</b>: https://cognitoai.in/
+- <b>Website</b>: https://www.tushar-aggarwal.com/
 - <b>Kaggle</b>: https://www.kaggle.com/tusharaggarwal27
 
 
 
 ## Feedback
 
-If you have any feedback, please reach out to me at tushar.inseec@gmail.com
+If you have any feedback, please reach out to me at tushar.inseec@gmail.com or info@tushar-aggarwal.com
